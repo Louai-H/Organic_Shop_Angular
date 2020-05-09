@@ -1,0 +1,69 @@
+<div class="contact_info">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-10 offset-lg-1">
+					<div class="d-flex flex-lg-row flex-column justify-content-between align-items-between">
+
+						<!-- Contact Item -->
+						<div class="contact_info_item d-flex flex-row align-items-center justify-content-start">
+							<div class="contact_info_image"><img src="assets/images/contact_1.png" alt=""></div>
+							<div class="contact_info_content">
+								<div class="contact_info_title">Phone</div>
+								<div class="contact_info_text">+972 54 398 7455</div>
+							</div>
+						</div>
+
+						<!-- Contact Item -->
+						<div class="contact_info_item d-flex flex-row align-items-center justify-content-start">
+							<div class="contact_info_image"><img src="assets/images/contact_2.png" alt=""></div>
+							<div class="contact_info_content">
+								<div class="contact_info_title">Email</div>
+								<div class="contact_info_text">OrganicShop@gmail.com</div>
+							</div>
+						</div>
+
+						<!-- Contact Item -->
+						<div class="contact_info_item d-flex flex-row align-items-center justify-content-start">
+							<div class="contact_info_image"><img src="assets/images/contact_3.png" alt=""></div>
+							<div class="contact_info_content">
+								<div class="contact_info_title">Address</div>
+								<div class="contact_info_text">14 HaDkalim, Ramat Gan, Israel</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+</div>
+
+<div class="contact_form_title">Contact Us</div>
+<form #f="ngForm">
+  <div class="contact_form_inputs d-flex flex-md-row flex-column justify-content-between align-items-between">
+    <div class="form-group input_field">
+      <input #name="ngModel" name="name" [(ngModel)]="contact.name" type="text" class="form-control" placeholder="Your Name" required>
+      <div class="alert alert-danger" *ngIf="name.touched && name.invalid">
+        <div *ngIf="name.errors.required">Name is required.</div>
+      </div>
+    </div>
+    <div class="form-group input_field">
+      <input #email="ngModel" name="email" [(ngModel)]="contact.email" type="text" class="form-control" placeholder="Your Email" required>
+      <div class="alert alert-danger" *ngIf="email.touched && email.invalid">
+        <div *ngIf="email.errors.required">Email is required.</div>
+      </div>
+    </div>
+    <div class="form-group input_field">
+      <input #phone="ngModel" name="phone" [(ngModel)]="contact.phone" type="text" class="form-control" placeholder="Your Phone Number" required>
+      <div class="alert alert-danger" *ngIf="phone.touched && phone.invalid">
+        <div *ngIf="phone.errors.required">Phone Number is required.</div>
+      </div>
+    </div>
+  </div>
+    <div class="form-group">
+      <textarea #message="ngModel" name="message" [(ngModel)]="contact.message" type="text" class="text_field form-control" placeholder="Your Message" required></textarea>
+      <div class="alert alert-danger" *ngIf="message.touched && message.invalid">
+        <div *ngIf="message.errors.required">Message is required.</div>
+      </div>
+    </div>
+    <button [disabled]="f.invalid" (click)="sendMessage()" class="btn btn-success">Send Message</button>
+</form>

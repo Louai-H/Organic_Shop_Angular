@@ -1,0 +1,28 @@
+.btn-success {
+    border-radius: 100px ;
+    background-color: #86B602;
+    border-color: #86B602;
+    color: #463919 ;
+    font-family: 'JazzLET', fantasy ;
+    font-size: 30px ;
+    
+}
+
+.title {
+    color: #463919 ;
+    font-family: 'JazzLET', fantasy ;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+}
+
+.container img {
+    width: 100%;
+    height: auto;
+}
+
+.container .btn {
+    text-align: center;
+}

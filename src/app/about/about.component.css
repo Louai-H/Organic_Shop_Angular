@@ -1,0 +1,64 @@
+.single_post
+{
+	padding-top: 30px;
+	padding-bottom: 82px;
+}
+.single_post_title
+{
+	font-size: 30px;
+	font-weight: 500;
+	color: #463919 ;
+    font-family: 'JazzLET', fantasy ;
+}
+.single_post_text
+{
+	margin-top: 33px;
+}
+.single_post_text p
+{
+	font-size: 18px;
+	font-weight: 300;
+	color: rgba(0,0,0,0.7);
+	line-height: 2;
+}
+
+.single_post_quote
+{
+	margin-top: 43px;
+	border: solid 1px #e8e8e8;
+	box-shadow: 0px 1px 5px rgba(0,0,0,0.1);
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 35px;
+	padding-bottom: 40px;
+}
+.teamImage
+{
+    width: 100% ;
+    margin-bottom: 15px ;
+}
+.quote_text
+{
+	font-size: 16px;
+	font-weight: 400;
+	color: rgba(0,0,0,0.7);
+	margin-top: 28px;
+	line-height: 1.875
+}
+.quote_name
+{
+	font-size: 16px;
+	font-weight: 500;
+	margin-top: 23px;
+}
+
+@media (max-width: 768px) {
+    .teamImage {
+        width: 100% ;
+    }
+}
+
+.cover {
+	width: 100%;
+
+}

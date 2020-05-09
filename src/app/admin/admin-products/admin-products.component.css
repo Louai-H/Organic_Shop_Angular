@@ -1,0 +1,10 @@
+#newProduct {
+    margin: 10px;
+}
+
+.btn-success {
+    background-color: #86B602;
+    border-color: #86B602;
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+}

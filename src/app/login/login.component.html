@@ -1,0 +1,34 @@
+<div class="container">
+    <div class="row">
+        <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
+            
+            <form class="form-signin mx-auto">
+
+                <img src="assets/images/lock.png" class="mx-auto d-block" id="lock">
+                <h5 class="text-danger text-center mb-4">Currently only login with google account works</h5>
+
+                <input type="email" class="form-control form-rounded mb-4" placeholder="Email address" disabled required>
+
+                <input type="password" class="form-control form-rounded mb-4" placeholder="Password" disabled required>
+
+                <div class="custom-control custom-checkbox mb-4">
+                        <input type="checkbox" class="custom-control-input" id="customCheck1" disabled>
+                        <label class="custom-control-label" for="customCheck1">Remember this password</label>
+                </div>
+                <button class="btn btn-lg btn-primary btn-block text-uppercase" type="submit" disabled>Sign in</button>
+                <hr class="my-4">
+                
+                <button class="loginBtn loginBtn--google text-center" (click)="login()">
+                        Login with Google
+                </button>
+                    
+                
+                <button class="loginBtn loginBtn--facebook text-center" disabled>
+                        Login with Facebook
+                </button>
+                    
+            </form>
+            
+        </div>
+    </div>
+</div>

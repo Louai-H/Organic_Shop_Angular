@@ -1,0 +1,32 @@
+.card {
+    margin-bottom: 30px; 
+}
+
+.card-footer {
+    padding: 0;
+}
+
+.clickable {
+    cursor: pointer;
+
+    -webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+.clickable:hover {
+    -webkit-transform: scale(1.3);
+	transform: scale(1.3);
+}
+
+.img-wrapper {
+    display: inline-block; 
+    overflow: hidden;
+}
+
+@media (max-width: 1200px) {
+    .card {
+        max-width: 100% ;
+    }
+}

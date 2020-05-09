@@ -1,0 +1,9 @@
+.sticky-top {
+    top: 125px ;
+}
+
+@media (max-width: 765px) {
+    .sticky-top {
+        top: 60px ;
+    }
+}

@@ -1,0 +1,19 @@
+.quantity {
+    min-height: 37px;
+    height: 100%;
+    padding-left: 30px ;
+    padding-right: 15px ;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+.btn {
+    min-width: 35px;
+}
+
+
+@media (max-width: 413px) {
+    .quantity {
+        white-space: nowrap;
+    }
+}

@@ -1,0 +1,49 @@
+.thumbnail {
+    width: 90px ;
+    height: 90px ;
+    border-radius: 100% ;
+    background-size: cover ;
+}
+
+@media (max-width: 576px) {
+    .thumbnail {
+        display: none ;
+    }
+    .table td:nth-child(1), .table th:nth-child(1)  {
+        padding: 0 ;
+    }
+}
+
+.thumbnailSM {
+    width: 60px ;
+    height: 60px ;
+    border-radius: 100% ;
+    background-size: cover ;
+    margin-top: 10px ;
+}
+
+@media (min-width: 576px) {
+    .thumbnailSM {
+        display: none ;
+    }
+}
+
+.btn-success {
+    background-color: #86B602;
+    border-color: #86B602;
+}
+
+.paddingRight {
+    padding-right: 10px ;
+}
+
+.table {
+    margin-top: 20px ;
+    margin-left: -15px ;
+}
+
+.title {
+    font-weight: bold ;
+    color: #463919 ;
+    font-family: 'JazzLET', fantasy ;
+}

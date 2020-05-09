@@ -1,0 +1,15 @@
+<div class="container">
+  <div class="row">
+      
+      <div class="col-md-4">
+          <product-card [product]="product" [shopping-cart]="cart"></product-card>
+      </div>
+
+      <div class="col-md-7">
+        <p> This Product is in the {{ product.category }} Category </p>
+        <p> Aenean finibus velit id urna vehicula, nec maximus est sollicitudin. Praesent at tempus lectus, eleifend blandit felis. Fusce augue arcu, consequat a nisl aliquet, consectetur elementum turpis. Donec iaculis lobortis nisl, et viverra risus imperdiet eu. Etiam mollis posuere elit non sagittis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quis arcu a magna sodales venenatis. Integer non diam sit amet magna luctus mollis ac eu nisi. In accumsan tellus ut dapibus blandit. </p>
+        <button class="btn btn-success" (click)="navigateHome()"> Continue Shopping </button>
+      </div>
+
+  </div>
+</div>
